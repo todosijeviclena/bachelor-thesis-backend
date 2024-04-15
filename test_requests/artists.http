@@ -1,0 +1,16 @@
+### All artists
+GET http://localhost:3000/artists
+
+### Fetch existing artist by its name
+GET http://localhost:3000/artists/name/Vlado Georgiev
+
+### Create new event
+POST http://localhost:3000/artists/create
+Content-Type: application/json
+
+{
+  "name": "Aleksandra Radović",
+  "info": "Aleksandra Radović je pevačica, kompozitor i tekstopisac i jedna od najpopularnijih pop pevačica u Srbiji. Njen album Žar ptica je bio najprodavaniji album u Srbiji i regionu tri meseca. Dobitnica je mnogih prestižnih nagrada, a takođe je jedna od retkih pevačica koja ima sopstvenu školu pevanja.",
+  "img": "https://aleksandraradovic.com/wp-content/uploads/2015/01/Aleksandra-Radovic-011.jpg",
+  "genre": ["pop"]
+}
